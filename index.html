@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person | Oct,30</title>
+    <link rel="stylesheet" href="./person.css">
+</head>
+
+<body>
+    <div class="person-big">
+        <div class="person">
+            <div class="person-images">
+                <div class="person-img-1"></div>
+                <div class="person-img-2"></div>
+            </div>
+            <div class="slider">
+                <div class="drag-line">
+                    <span></span>
+                </div>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const slider = document.querySelector(".slider input");
+        const img = document.querySelector(".person-images .person-img-2");
+        const dragLine = document.querySelector(".slider .drag-line");
+        slider.oninput = () => {
+            let sliderVal = slider.value;
+            dragLine.style.left = sliderVal + "%";
+            img.style.width = sliderVal + "%";
+        }
+    </script>
+</body>
+
+</html>
