@@ -21,13 +21,14 @@
     /* overflow: hidden; */
     background: #fff;
   }
- 
-  /* @media (max-width:735px) {
+
+  @media (max-width:375px) {
     .person-big{
-    overflow: hidden;
+      width:375px;
+      height: 825px;
     }
-  }   */
-   
+  }
+
 
 
   .person {
@@ -38,12 +39,13 @@
     background: #fff;
   }
 
-  /* @media (max-width:768px) {
+  @media (max-width:375px) {
     .person{
-      width:100%;
-      overflow:unset;
+      width:375px;
+      height: 825px;
     }
-  } */
+  }
+
  
 
   .person .person-images {
@@ -61,8 +63,9 @@
 
   @media (max-width:375px) {
     .person .person-images .person-img-1{
+      background-repeat: no-repeat;
       background-position: 51% 71%;
-      background-size: 120%;
+      background-size: 402%;
     }
   }
   
@@ -82,10 +85,10 @@
 
   @media (max-width:375px) {
     .person .person-images .person-img-2{
-      background-position: -30px -30px;
-      background-size: 440px;
-      background-repeat: no-repeat;
-    
+      height: 848px;
+      background-position: -573px -17px;
+      background-size: cover;
+      overflow: hidden;
     }
   }
 
@@ -165,9 +168,7 @@
 
   @media (max-width:375px) {
     .slider .drag-line span{
-      height: 20px;
-      width: 20px;
-      top: 21%;
+    display: none;
     }
   }
 
