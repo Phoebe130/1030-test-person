@@ -8,7 +8,7 @@
   html,body {
     display: grid;
     height: 100%;
-    /* place-items: center; */
+    place-items: center;
     background: #efefef;
   }
 
@@ -36,7 +36,7 @@
     width: 1920px; */
     width: calc( 1920 * 100vw / 1920);
     height: calc( 1080 * 100vw / 1920);
-    overflow: hidden;
+    /* overflow: hidden; */
     background: #fff;
     /* border: 7px solid #fff; */
     /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); */ 
@@ -69,6 +69,8 @@
     .person .person-images .person-img-1{
       background-position: 51% 71%;
       background-size: 120%;
+
+
     }
   }
   
@@ -92,8 +94,10 @@
 
   @media (max-width:375px) {
     .person .person-images .person-img-2{
-      background-position: 13% 75%;
-      background-size: 235%;
+      background-position: -30px -30px;
+      background-size: 440px;
+      background-repeat: no-repeat;
+    
     }
   }
 
@@ -126,6 +130,13 @@
     pointer-events: none;
   }
 
+  @media (max-width:375px) {
+    .slider .drag-line {
+      width: 0.1px;
+      height: 100vh;
+    }
+  }
+
   .slider .drag-line::before,
   .slider .drag-line::after {
     position: absolute;
@@ -140,6 +151,12 @@
   .slider .drag-line::after {
     bottom: 0;
   }
+  @media (max-width:1600px) {
+    .slider .drag-line::after {
+      bottom: 176px;
+    }
+  }
+
   .slider .drag-line span {
     height: 42px;
     width: 42px;
@@ -150,6 +167,13 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @media (max-width:1600px) {
+    .slider .drag-line span{
+      top: 76%;
+    }
+  }
+
   .slider .drag-line span::before,
   .slider .drag-line span::after {
     position: absolute;
