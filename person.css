@@ -25,21 +25,17 @@
   /* @media (max-width:735px) {
     .person-big{
     overflow: hidden;
-  }
-} */
+    }
+  }   */
    
 
 
   .person {
-    position: relative;
-    /* height: 1080px;
-    width: 1920px; */
     width: calc( 1920 * 100vw / 1920);
-    height: calc( 1080 * 100vw / 1920);
-    /* overflow: hidden; */
+    height: calc( 1080 * 100vw / 1920); 
+    position: relative;
+     /* overflow: hidden; */
     background: #fff;
-    /* border: 7px solid #fff; */
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); */ 
   }
 
   /* @media (max-width:768px) {
@@ -59,18 +55,14 @@
   .person .person-images .person-img-1 {
     height: 100%;
     width: 100%;
-    /* background: url('./imgphoebe/banner2/banner_highloc.jpg') no-repeat; */
     background-image: url('./imgphoebe/banner2/banner_highloc.jpg');
     background-position: 50%;
-    /* background-position:   calc( -2 * 100vw / 1920); */
   }
 
   @media (max-width:375px) {
     .person .person-images .person-img-1{
       background-position: 51% 71%;
       background-size: 120%;
-
-
     }
   }
   
@@ -79,11 +71,7 @@
     position: absolute;
     height: 100%;
     width: 50%;
-    /* background: url('./imgphoebe/banner2/banner_henry.jpg') no-repeat; */
-    /* background-image: center center; */
     background-image: url('./imgphoebe/banner2/banner_henry.jpg');
-    /* background-position: -2%; */
- 
   }
 
   @media (max-width:1600px) {
@@ -100,8 +88,6 @@
     
     }
   }
-
-
 
   .person .slider {
     position: absolute;
@@ -122,6 +108,7 @@
     -webkit-appearance: none;
     cursor: col-resize;
   }
+  
   .slider .drag-line {
     width: 3px;
     height: 100vh;
@@ -157,6 +144,8 @@
     }
   }
 
+
+
   .slider .drag-line span {
     height: 42px;
     width: 42px;
@@ -171,6 +160,14 @@
   @media (max-width:1600px) {
     .slider .drag-line span{
       top: 76%;
+    }
+  }
+
+  @media (max-width:375px) {
+    .slider .drag-line span{
+      height: 20px;
+      width: 20px;
+      top: 21%;
     }
   }
 
