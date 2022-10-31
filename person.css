@@ -65,8 +65,14 @@
     /* background-position:   calc( -2 * 100vw / 1920); */
   }
 
-
+  @media (max-width:375px) {
+    .person .person-images .person-img-1{
+      background-position: 51% 71%;
+      background-size: 120%;
+    }
+  }
   
+
   .person .person-images .person-img-2 {
     position: absolute;
     height: 100%;
@@ -81,6 +87,13 @@
   @media (max-width:1600px) {
     .person .person-images .person-img-2{
     background-position: 14% center;
+    }
+  }
+
+  @media (max-width:375px) {
+    .person .person-images .person-img-2{
+      background-position: 13% 75%;
+      background-size: 235%;
     }
   }
 
