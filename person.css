@@ -134,7 +134,12 @@
     background-position: 50%;
   }
 
-
+  @media (max-width:375px) {
+    .person .person-images .person-img-1{
+      height: 100vh;
+     
+    }
+  }
 
 /* Henry */
   .person .person-images .person-img-2 {
