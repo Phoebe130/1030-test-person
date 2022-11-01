@@ -126,7 +126,7 @@
   }
 
 
-/* high loc */
+/* High Loc */
   .person .person-images .person-img-1 {
     height: 100%;
     width: 100%;
@@ -134,81 +134,41 @@
     background-position: 50%;
   }
 
-  @media (max-width: 1600px) {
-    .person .person-images .person-img-1 {
-      width:1600px;
-      height: 100vh;
-    }
-  }
-
-  @media (max-width: 1440px) {
-    .person .person-images .person-img-1 {
-      width:1440px;
-      height: 100vh;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .person .person-images .person-img-1 {
-      width:1024px;
-      height: 100vh;
-    }
-  }
-
-  @media (max-width: 768px){
-    .person .person-images .person-img-1 {
-      width:768px;
-      height: 100vh;
-    }
-  }
-
-  @media (max-width: 425px){
-    .person .person-images .person-img-1 {
-      width:425px;
-      height: 100vh;
-    }
-  }
-
-  @media (max-width:375px) {
-    .person .person-images .person-img-1 {
-      width:375px;
-      height: 100vh;    
-    }
-  }
 
 
-/* henry */
+/* Henry */
   .person .person-images .person-img-2 {
     position: absolute;
     height: 100%;
     width: 50%;
     background-image: url('./imgphoebe/banner2/banner_henry.jpg');
+    background-position: 3px center;
+
   }
 
   @media (max-width:1600px) {
     .person .person-images .person-img-2{
-    background-position: 14% center;
+    background-position: -154px center;
     }
   }
-
 
   @media (max-width: 1440px) {
     .person .person-images .person-img-2{
  
-      background-position: -251px center;
+      background-position: -236px center;
 
     }
   }
 
   @media (max-width: 1024px) {
     .person .person-images .person-img-2{
-      background-position: -450px center;
+      background-position: -443px center;
     }
   }
 
   @media (max-width: 768px){
     .person .person-images .person-img-2{
-      background-position:-579px center;
+      background-position:-571px center;
     }
   }
 
@@ -221,8 +181,7 @@
   @media (max-width:375px) {
     .person .person-images .person-img-2{
       height: 100vh;
-      background-position: -776px center;
-
+      background-position: -766px center;
     }
   }
 
@@ -248,6 +207,8 @@
     cursor: col-resize;
   }
   
+
+  /* 線 */
   .slider .drag-line {
     width: 3px;
     height: 100vh;
@@ -256,13 +217,42 @@
     pointer-events: none;
   }
 
-  @media (max-width:375px) {
-    .slider .drag-line {
+  @media (max-width:1600px) {
+    .slider .drag-line{
+      width: 0.1px;
+      height: 100vh;    
+    }
+  }
+
+  /* @media (max-width: 1440px) {
+    .slider .drag-line{
       width: 0.1px;
       height: 100vh;
     }
   }
 
+  @media (max-width: 1024px) {
+    .slider .drag-line{
+      width: 0.1px;
+      height: 100vh;    
+    }
+  }
+
+  @media (max-width: 768px){
+    .slider .drag-line{
+      width: 0.1px;
+      height: 100vh;    
+    }
+  }
+
+  @media (max-width: 425px){
+    .slider .drag-line{
+      width: 0.1px;
+      height: 100vh;    
+    }
+  } */
+
+ 
   .slider .drag-line::before,
   .slider .drag-line::after {
     position: absolute;
@@ -274,17 +264,16 @@
   .slider .drag-line::before {
     top: 0;
   }
+
+
+  /* 線（下面） */
   .slider .drag-line::after {
     bottom: 0;
   }
-  @media (max-width:1600px) {
-    .slider .drag-line::after {
-      bottom: 176px;
-    }
-  }
 
 
 
+  /* 按鈕 */
   .slider .drag-line span {
     height: 42px;
     width: 42px;
@@ -296,17 +285,13 @@
     transform: translate(-50%, -50%);
   }
 
-  @media (max-width:1600px) {
-    .slider .drag-line span{
-      top: 76%;
-    }
-  }
-
   @media (max-width:375px) {
     .slider .drag-line span{
     display: none;
     }
   }
+
+
 
   .slider .drag-line span::before,
   .slider .drag-line span::after {
