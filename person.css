@@ -9,7 +9,7 @@
     display: grid;
     height: 100%;
     /* place-items: center; */
-    background: #efefef;
+    background: #efefef;  
   }
 
   .person-big {
@@ -22,9 +22,9 @@
     background: #fff;
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1680px) {
     .person-big{
-      width:1600px;
+      width:1680px;
       height: 100vh;
     }
   }
@@ -75,9 +75,9 @@
     background: #fff;
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1680px) {
     .person{
-      width:1600px;
+      width:1680px;
       height: 100vh;
     }
   }
@@ -151,7 +151,7 @@
 
   }
 
-  @media (max-width:1600px) {
+  @media (max-width:1680px) {
     .person .person-images .person-img-2{
     background-position: -154px center;
     }
@@ -222,7 +222,7 @@
     pointer-events: none;
   }
 
-  @media (max-width:1600px) {
+  @media (max-width:1680px) {
     .slider .drag-line{
       width: 0.1px;
       height: 100vh;    
